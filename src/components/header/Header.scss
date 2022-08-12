@@ -1,0 +1,42 @@
+.header {
+	margin: 0 2.5rem;
+	padding: .5rem 0;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+	.header-left,
+	.header-right {
+		display: flex;
+		align-items: center;
+		.header-icon {
+			width: 80px;
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			text-transform: capitalize;
+			span {
+				margin: 0 30px;
+				font-size: 1.3rem;
+				cursor: pointer;
+				color: white;
+
+				&:hover {
+					color: #F5C518;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 614px) {
+	.header {
+		&-left {
+			flex-direction: column;
+			width: 100%;
+			gap: 10px;
+			margin-bottom: 14px;
+		}
+	}
+}
